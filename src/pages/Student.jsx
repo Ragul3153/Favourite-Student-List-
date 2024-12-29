@@ -41,7 +41,7 @@ function Student(props){
                 studentlist.map(function(item)
                 {
                     return (
-                        <div className="flex text-1xl font-bold justify-between p-5">
+                        <div className="flex text-1xl font-bold justify-between p-5 md:justify-center md:gap-32">
                             <h2 className="bg-red-500 w-32 p-2 text-center border border-transparent rounded-md">{item.name}</h2>
                             {
                                 item.favourite == false ? <button className="bg-blue-500 p-2 border rounded-md border-transparent" onClick={()=>{handleclick(item.id)}}>Add to Favourite</button> : <button className="bg-white p-2 border rounded-md border-transparent">Add to Favourite</button>
